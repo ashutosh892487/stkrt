@@ -1,8 +1,6 @@
 $blue: red;
 $width: 100%;
-body{
-    width:$width;
-}
+$pad:3rem;
 @mixin large-text {
     font: {
       family: Arial;
@@ -11,6 +9,16 @@ body{
     }
     color: #3700ff;
   }
+body{
+    width:$width;
+}
+.jumbotron{
+padding:$pad;
+}
+.form-row {
+    width: $width;
+    padding: $pad;
+}
   .card-title{
       @include large-text;
   }
@@ -19,4 +27,4 @@ body{
       .card{
           padding: 1rem;
       }
-  }
+  } 
