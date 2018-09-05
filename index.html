@@ -1,53 +1,191 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Getting started.....</title>
-</head>
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Varanasi Tourism</title>
+      </head>
+        <body>
+          <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="#">VARANASI</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Places To See</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Things To Do</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Trips
+                  </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Plan Your Trip</a>
+                        <a class="dropdown-item" href="#">Experiences</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Upload Photo</a>
+                      </div>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+                </div>
+          </nav>
+              <main role="main">
+
+                  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#myCarousel" data-slide-to="1"></li>
+                      <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="first-slide" src="image/vns1.jpg" alt="First slide">
+                        <div class="container">
+                          <div class="carousel-caption text-left">
+                            <h1>Ganga Arti</h1>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Visit today</a></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="second-slide" src="image/vns2.jpg" alt="Second slide">
+                        <div class="container">
+                          <div class="carousel-caption">
+                            <h1>Temples</h1>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p><a class="btn btn-lg btn-primary data-toggle="popover" title="About Varanasi" href="#" role="button">Learn more</a></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="third-slide" src="image/vns3.jpg" alt="Third slide">
+                        <div class="container">
+                          <div class="carousel-caption text-right">
+                            <h1>Banaras Hindu University</h1>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                  <hr>
+                  <div class="jumbotron text-center">
+                      <h1 class="display-4">Varanasi</h1>
+                      <p class="lead">Varanasi or Banaras, mentioned in the scriptures as Kashi, is less of a city and more of a dreamy experience. It is a paragon of Indian culture, philosophy, traditions and spiritual ethos since times immemorial. It is among the Sapta Puries, meaning seven sacred cities of Ancient India. The city is located on the bank of River Ganga which has two tributaries in the city: Varuna and Assi; hence the name Varanasi. The combination of Kashi – the holy city, Ganga- the sacred river and Shiva- the supreme God, makes Varanasi an immortal destination. Today, Varanasi remains the hub of cultural and holy activities. In the field of learning, especially of Religion, Philosophy, Yoga, Ayurveda, Astrology, Dance and Music, the city is certainly unparalleled. The Banarasi Silk Sarees and Brocades are known worldwide for its elegance. Varanasi is full of surprises abounding every corner; the more one explores it, the more one falls in love with it!</p>
+                    </div>
+                    <hr>
+                    <form>
+                        <h1 class="form-title text-center">Plan Your Trip</h1>
+                        <div class="form-row align-items-center justify-content-center">
+                          <div class="col-auto">
+                            <label class="sr-only" for="inlineFormInput">Name</label>
+                            <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Ashutosh Singh">
+                          </div>
+                          
+                          <div class="col-auto">
+                            <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                            <div class="input-group mb-2">
+                              <div class="input-group-prepend">
+                                <div class="input-group-text">@</div>
+                              </div>
+                              <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+                            </div>
+                          </div>
+                          <div class="col-auto">
+                              <label class="sr-only" for="inlineFormInput">From</label>
+                              <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="State">
+                          </div>
+                          <div class="col-auto">
+                              <label class="sr-only" for="inlineFormInput">To</label>
+                              <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Varanasi">
+                          </div>
+                          <div class="col-auto">
+                            <div class="form-check mb-2">
+                              <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                              <label class="form-check-label" for="autoSizingCheck">
+                                Remember me
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-auto">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Submit
+          </button>
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="modal-title" id="exampleModalLabel">Thanks!</h2>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <h3 class="model-content text-center">We will contact you sortly.</h3>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
           </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
+        </div>
+      </div>
+    </form>
+    <hr>
+    <div class="card-title text-center">
+      <h1>Places To See</h1>
     </div>
-  </nav>
-  <div class="jumbotron">
-    <h1 class="display-4">Hello, world!</h1>
-    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-    <hr class="my-4">
-    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-  </div>
-</body>
-</html>
+  <div class="card-group">
+                          <div class="card">
+                            <img class="card-img-top" src="image/tulsi.jpg" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Tulsi Manas Mandir</h5>
+                              <p class="card-text">Built in 1964 the Tulsi Manas Mandir is one of the most famous temples in Varanasi. It is made up of white marble and the beautiful garden adds to its attractiveness. The temple is dedicated to the Lord Rama and was constructed by the Sureka family of Banaras. The temple has beautiful images of the Lord Ram, Mother Sita, Lakshman and Lord Hanuman. The wall of the temple has various scenes depicted from the epic Ramcharitmanasa. There is a museum in the premises which has a rare collection of manuscripts of the Ramayana and other artefacts.</p>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <img class="card-img-top" src="image/vishva.jpg" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Kashi Vishwanath Temple</h5>
+                              <p class="card-text">Shri Kashi Vishwanath Temple is a major sacred attraction, dedicated to Lord Shiva, the presiding deity of the city. The temple houses a Shivalinga, which is said to be one amongst the twelve Jyotirlinga, the fiery pillar of light, by which Lord Shiva beckoned his divine supremacy, broke through the earth’s crust and gleamed towards the heaven.  The present temple was built by Rani Ahailya Bai Holkar of Indore in the year 1776, however, Shri Kashi Vishwanath Temple was existent even before the present one. About 800 kg of gold being used to cap the spire by Maharaja Ranjit Singh, hence it is also known as the Golden Temple in Varanasi.This tirth also finds mention in old religious texts like Skanda Purana.</p>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <img class="card-img-top" src="image/sankat.jpg" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Sankat Mochan Temple</h5>
+                              <p class="card-text">The Sankat Mochan Temple is one of the oldest temples in the city dedicated to Lord Hanuman. It is situated on the banks of Pauranic River Assi. Goswamiji has specifically named the deity "Sankat Mochan" which means reliever from troubles. In the temple, "besan ke laddoo" are served as an offering to Lord Hanuman and his idol is decked with a pleasant marigold flower garland. This temple has the unique distinction of having Lord Hanuman facing his Lord Rama, whom he worshiped with steadfast and selfless devotion. It is said that Tulsidas wrote Ramcharitmanas here. According to Hindu mythology, one who visits the Sankat Mochan temple regularly gets their wishes fulfilled. It is considered that the temple was built from the time when Goswami Tulsidas had a vision of the Lord Hanuman. The temple was established by the great saint Goswami Tulsidas.</p>
+                            </div>
+                          </div>
+          </div>
+<footer class="footer font-small bg-dark">
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a href="#">ashu.singh@cgi.com</a>
+    </div>
+  </footer>
+  <!-- Footer -->
+        </body>
+      </html>

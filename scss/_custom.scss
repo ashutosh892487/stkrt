@@ -1,1 +1,22 @@
 $blue: red;
+$width: 100%;
+body{
+    width:$width;
+}
+@mixin large-text {
+    font: {
+      family: Arial;
+      size: 20px;
+      weight: bold;
+    }
+    color: #3700ff;
+  }
+  .card-title{
+      @include large-text;
+  }
+  .card-group{
+      padding: 1rem 3rem;
+      .card{
+          padding: 1rem;
+      }
+  }
